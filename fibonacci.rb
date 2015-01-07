@@ -1,3 +1,5 @@
+# https://github.com/muzfuz/CodeLessons/blob/master/recursion/fibonacci.rb
+
 #These two functions print out the numbers in a fibonacci sequence up to position 'n'
 #Both functions are initialized with the same starting variables, and count upwards.
 
@@ -22,6 +24,7 @@ def fibs_rec(n, num1 = 0, total = 1)      #fibs_rec(n, num1=0, num2=1, total=1)
   fibs_rec(n-1, total, num1+total)      #fibs_rec(n-1, num2, num1+num2, num1+num2)
 end
 
+# https://github.com/Hawkeye000/odin-recursion/blob/master/fibs.rb
 # one line fibonacci number
 def fibs_rec_oneline(x)
   x <= 2 ? 1 : fibs_rec_oneline(x-1) + fibs_rec_oneline(x-2)
