@@ -1,5 +1,17 @@
+# https://github.com/muzfuz/CodeLessons/blob/master/recursion/merge_sort.rb
+
 # The merge_sort function takes an array of unordered objects, 
 # and returns an array of ordered objects, using a merge sort algorithm.
+
+=begin
+ok i think the point is to recursively divide the array
+
+for example, if there are 8 elements, recursively divide until there are 8 individual arrays  
+
+  then it calls the merge function, which compares array 1 to 2, 3 to 4, 5-6, 7-8
+  eventually the 1-4, 5-8, and lastly 1-8
+  
+=end
 
 def merge_sort(array)
   len = array.length
